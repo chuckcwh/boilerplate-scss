@@ -1,0 +1,59 @@
+/* Here are the basic settings across all the pages */
+
+/* variables
+------------------------------------------ */
+$bg-grey1: #f7f8f7;
+$bg-grey2: #ecedec;
+$bg-grey4: #dddcdc;
+$bg-grey5: #262626;
+$bg-grey3: #c3c3c3;
+$yellow: #fdb018;
+$grey: #999999;
+
+$monitor-big: "screen and (min-width: 1200px)";
+$monitor-med: "screen and (min-width: 800px) and (max-width: 1199px)";
+$monitor-sma: "screen and (min-width: 600px) and (max-width: 799px)";
+$monitor-mob: "screen and (max-width: 599px)";
+
+*:focus {
+    outline: none;
+}
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 2.1rem;
+    letter-spacing: 0.1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: 0.9rem;
+}
+
+p {
+    font-size: 0.8rem;
+    line-height: 0.9rem;
+}
+
+input {
+    font-size: 1rem;
+    &:focus::-webkit-input-placeholder { color:transparent; }
+    &:focus:-moz-input-placeholder { color:transparent; }
+    &:focus::-moz-input-placeholder { color:transparent; }
+    &:focus:-moz-input-placeholder { color:transparent; }
+}

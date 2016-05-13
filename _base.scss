@@ -1,0 +1,116 @@
+/* Here are the basic settings across all the pages */
+
+/* variables
+------------------------------------------ */
+$brand-blue-d: #009EEB;
+$brand-blue: #1FB6FF;
+$brand-blue-l: #85D7FF;
+
+$purple-d: #592DEA;
+$purple: #7E5BEF;
+$purple-l: #A389F4;
+
+$pink-d: #FF16D1;
+$pink: #FF49DB;
+$pink-l: #FF7CE5;
+
+$orange-d: #FF5216;
+$orange: #FF7849;
+$orange-l: #FF9E7C;
+
+$green-d: #0F9F4F;
+$green: #13CE66;
+$green-l: #29EB7F;
+
+$yellow-d: #F8B700;
+$yellow: #FFC82C;
+$yellow-l: #FFD77F;
+
+/* grey colors */
+$grey: #8492A6;
+$grey-d: #3C4858;
+$grey-xd: #273444;
+$grey-xxd: #1F2D3D;
+
+$smoke: #E0E6ED;
+$smoke-d: #D3DCE6;
+$smoke-xd: #C0CCDA;
+
+$snow: #F9FAFC;
+$snow-d: #EFF2F7;
+$snow-xd: #E5E9F2;
+
+/* UI colors */
+$color-blue: #1FB6FF;
+$color-positive: #13CE66;
+$color-negative: #FF4949;
+$color-warning: #FFC82C;
+
+/* browser width */
+$monitor-big: "screen and (min-width: 1200px)";
+$monitor-med: "screen and (min-width: 800px) and (max-width: 1199px)";
+$monitor-sma: "screen and (min-width: 600px) and (max-width: 799px)";
+$monitor-mob: "screen and (max-width: 599px)";
+
+
+
+*:focus {
+    outline: none;
+}
+
+body {
+    @include Ubuntu-Regular;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 2.1rem;
+    letter-spacing: 0.1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: 0.9rem;
+}
+
+p {
+    font-size: 0.8rem;
+    line-height: 0.9rem;
+}
+
+input {
+    font-size: 1rem;
+    &:focus::-webkit-input-placeholder { color:transparent; }
+    &:focus:-moz-input-placeholder { color:transparent; }
+    &:focus::-moz-input-placeholder { color:transparent; }
+    &:focus:-moz-input-placeholder { color:transparent; }
+}
+
+/* Font sizes */
+.fontSize-xl   { font-size: 40px; }
+.fontSize-l    { font-size: 32px; }
+.fontSize-m    { font-size: 16px; }
+.fontSize-s    { font-size: 14px; }
+.fontSize-xs   { font-size: 12px; }
+
+/* Button component */
+.btn {
+    display: inline-block;
+    border-width: 0;
+    white-space: nowrap;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .2s;
+    transition-timing-function: linear;
+}

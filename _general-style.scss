@@ -1,0 +1,26 @@
+/* animation */
+.animation--spin {
+    -webkit-animation: spin .8s infinite linear;
+    animation: spin .8s infinite linear;
+}
+.animation--rotate {
+    -webkit-animation: spin 3s 1s infinite cubic-bezier(.075,.82,.165,1);
+    animation: spin 3s 1s infinite cubic-bezier(.075,.82,.165,1);
+}
+.animation-bounce {
+    -webkit-animation: bounce 1.8s 4 cubic-bezier(.075,.82,.165,1);
+    animation: bounce 1.8s 4 cubic-bezier(.075,.82,.165,1);
+}
+
+
+/* hover: only desktop */
+.hover--scaleUp {
+    @media screen and (min-width: 768px) {
+        -webkit-transition-timing-function: cubic-bezier(.68,-.55,.265,1.55);
+        transition-timing-function: cubic-bezier(.68,-.55,.265,1.55);
+        &:hover {
+          transform: scale(1.2);
+        }
+    }
+}
+

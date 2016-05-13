@@ -1,0 +1,43 @@
+/* font settings */
+@mixin font-face($font-family, $file-path, $font-weight, $font-style) {
+    @font-face {
+        font-family: $font-family;
+        src: url('#{$file-path}.eot');
+        src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'),
+             url('#{$file-path}.woff') format('woff'),
+             url('#{$file-path}.ttf') format('truetype'),
+             url('#{$file-path}.svg##{$font-family}') format('svg');
+        font-weight: $font-weight;
+        font-style: $font-style;
+    }
+    // Chrome for Windows rendering fix: http://www.adtrak.co.uk/blog/font-face-chrome-rendering/
+    @media screen and (-webkit-min-device-pixel-ratio: 0) {
+        @font-face {
+            font-family: $font-family;
+            src: url('#{$file-path}.svg##{$font-family}') format('svg');
+        }
+    }
+}
+
+
+@include font-face(Ubuntu-Light, 'https://dl.dropbox.com/u/1220078/ubuntu-new/Ubuntu-Light-webfont', 300, normal);
+
+
+@mixin Ubuntu-Light {
+    font-family: 'Ubunt-Light', arial, sans-serif;
+    font-weight: 300; font-style: normal;
+}
+@mixin Ubuntu-Regular {
+  font-family: 'Ubuntu-Regular', arial, sans-serif;
+  font-weight: 400; font-style: normal;
+}
+@mixin Ubuntu-Bold {
+  font-family: 'Ubuntu-Bold', arial, sans-serif;
+  font-weight: 700; font-style: normal;
+}
+@mixin Ubuntu-Regular-Italic {
+  font-family: 'Ubuntu-Regular-Italic', arial, sans-serif;
+  font-weight: 400; font-style: italic;
+}
+
+

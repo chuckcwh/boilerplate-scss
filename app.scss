@@ -1,9 +1,14 @@
-@import "compass/reset";
-@import "compass/css3";
+@import "reset";
 
-@import "hover-master/hover";
+//plugins
+@import "vender/hover-master/hover";
+@import "vender/animate/animate";
 
-@import "_base";
-@import "_mixins";
+//general
+@import "font";
+@import "base";
+@import "mixin";
+@import "general-style";
 
-@import "_index";
+//page specific
+@import "index";
